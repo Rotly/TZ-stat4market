@@ -280,7 +280,8 @@ margin:0 auto;
 		position:relative;
 		margin:0 13px;
 		cursor:pointer;
-
+		display:flex;
+		justify-content:flex-end;
 	}
 	&-link:first-child{
 		margin-left:0;
@@ -289,7 +290,7 @@ margin:0 auto;
 		width: 10px;
 		height: 1px;
 		background-color: rgba(51, 26, 47,0.5);
-		margin:0 8px;
+		margin:0 -18px;
 		margin-top:10px;
 		position:absolute;
 		}
@@ -442,7 +443,7 @@ Media
 @media(max-width:1620px) {
 
 	.header-top {
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	.logo,
@@ -454,7 +455,7 @@ Media
 		margin-right: 0;
 	}
 	.menu-list{
-		justify-content: space-around;
+		justify-content: space-between;
 		width:300px;
 	}
 	.logo-img{
@@ -922,4 +923,5 @@ Media
 			height:265px;
 		}
 	}
+
 }
