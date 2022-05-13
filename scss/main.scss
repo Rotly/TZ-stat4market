@@ -182,14 +182,15 @@ margin:0 auto;
 .courses {
 	display:flex;
 	justify-content: space-around;
+	z-index:0;
 	&-left {
 		width:880px;
+		z-index:1;
 	}
 
 	&-right {
-		z-index:1;
 		margin-top:80px;
-
+		z-index:0;
 	}
 
 	display:flex;
@@ -263,10 +264,14 @@ margin:0 auto;
 .pagination {
 	align-items: center;
 	margin:66px 0 15px 0;
+	z-index:1;
 	&-text{
 		font-size: 16px;
 		line-height: 19px;
 		color: rgba(51, 26, 47, 0.5);
+		&:hover{
+			color:#CF51CE;
+		}
 	}
 	&-list{
 		display:flex;
@@ -275,6 +280,7 @@ margin:0 auto;
 		position:relative;
 		margin:0 13px;
 		cursor:pointer;
+
 	}
 	&-link:first-child{
 		margin-left:0;
